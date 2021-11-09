@@ -1,7 +1,8 @@
 lockfileVersion: 5.3
 
 specifiers:
-  '@sveltejs/kit': next
+  '@sveltejs/adapter-vercel': ^1.0.0-next.30
+  '@sveltejs/kit': 1.0.0-next.180
   '@typescript-eslint/eslint-plugin': ^4.31.1
   '@typescript-eslint/parser': ^4.31.1
   autoprefixer: ^10.3.7
@@ -21,7 +22,8 @@ specifiers:
   typescript: ^4.4.3
 
 devDependencies:
-  '@sveltejs/kit': 1.0.0-next.195_svelte@3.44.1
+  '@sveltejs/adapter-vercel': 1.0.0-next.31
+  '@sveltejs/kit': 1.0.0-next.180_svelte@3.44.1
   '@typescript-eslint/eslint-plugin': 4.33.0_cc617358c89d3f38c52462f6d809db4c
   '@typescript-eslint/parser': 4.33.0_eslint@7.32.0+typescript@4.4.4
   autoprefixer: 10.4.0_postcss@8.3.11
@@ -130,12 +132,18 @@ packages:
       picomatch: 2.3.0
     dev: true
 
-  /@sveltejs/kit/1.0.0-next.195_svelte@3.44.1:
-    resolution: {integrity: sha512-R2X4FgzXQhp63XOik6S1Flw91S2CEA7sTxdsnNFrq3O+bIN7pQhJhkm6zgH68MZANdDcq8oIiSRkxT4M3t1+jQ==}
-    engines: {node: '>=14.13'}
+  /@sveltejs/adapter-vercel/1.0.0-next.31:
+    resolution: {integrity: sha512-W8p/U00B6ihVrDpwMkgEexfVUzaLmn4MRtXj//Gw4NDFfsrZR4P5wBidrOAIkCYBMvqCOHD+vbAvIiAMOaN23g==}
+    dependencies:
+      esbuild: 0.13.13
+    dev: true
+
+  /@sveltejs/kit/1.0.0-next.180_svelte@3.44.1:
+    resolution: {integrity: sha512-SbqZqgtw1KnyV1CXqOLQUQTxOksONvNUGeyalAQem8XHPiV7iNslPhXbTBxHyBhD3rvY4Nzd1kPp9/zCVeWsog==}
+    engines: {node: ^12.20 || >=14.13}
     hasBin: true
     peerDependencies:
-      svelte: ^3.44.0
+      svelte: ^3.43.0
     dependencies:
       '@sveltejs/vite-plugin-svelte': 1.0.0-next.30_svelte@3.44.1+vite@2.6.13
       cheap-watch: 1.0.4
