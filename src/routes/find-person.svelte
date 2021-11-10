@@ -1,5 +1,8 @@
 <script>
+	import { goto } from '$app/navigation';
+
 	import FindPersonItem from '$lib/components/FindPersonItem.svelte';
+	import { searchStore } from '$lib/utils/stores';
 
 	const people = [
 		{
@@ -29,6 +32,11 @@
 	};
 
 	let filterString = '';
+
+	function openUser(person) {
+		searchStore.set(person);
+		goto('/user/' + person.name);
+	}
 </script>
 
 <div class="px-6">
@@ -51,7 +59,12 @@
 
 	<div class="mt-4 space-y-3">
 		{#each filterPeople(filterString) as person}
-			<FindPersonItem icon={person.icon} name={person.name} title={person.title} />
+			<FindPersonItem
+				icon={person.icon}
+				name={person.name}
+				title={person.title}
+				on:click={() => openUser(person)}
+			/>
 		{/each}
 	</div>
 
