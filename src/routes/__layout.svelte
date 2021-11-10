@@ -83,7 +83,7 @@
 
 			<div class="overflow-y-scroll scrollbar-hide px-6 space-y-3 pb-6">
 				{#each navItems as item}
-					<NavItem text={item.title} />
+					<NavItem text={item.title} href={item.href} />
 				{/each}
 			</div>
 		</div>
