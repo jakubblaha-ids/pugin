@@ -1,20 +1,26 @@
 /* Write your global styles here, in PostCSS syntax */
 @tailwind base;
 
+html,
+body,
+#svelte {
+    height: 100%;
+}
+
 button {
-	@apply transition-all duration-200;
+    @apply transition-all duration-200;
 }
 
 button:active {
-	@apply scale-90;
+    @apply scale-90;
 }
 
 a {
-	@apply transition-all duration-200;
+    @apply transition-all duration-200;
 }
 
 a:active {
-	@apply scale-90;
+    @apply scale-90;
 }
 
 @tailwind components;
