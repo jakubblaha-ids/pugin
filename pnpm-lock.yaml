@@ -17,9 +17,13 @@ specifiers:
   svelte: ^3.42.6
   svelte-check: ^2.2.6
   svelte-preprocess: ^4.9.8
+  tailwind-scrollbar-hide: ^1.1.5
   tailwindcss: ^2.2.16
   tslib: ^2.3.1
   typescript: ^4.4.3
+
+dependencies:
+  tailwind-scrollbar-hide: 1.1.5
 
 devDependencies:
   '@sveltejs/adapter-vercel': 1.0.0-next.31
@@ -2468,6 +2472,10 @@ packages:
       string-width: 4.2.3
       strip-ansi: 6.0.1
     dev: true
+
+  /tailwind-scrollbar-hide/1.1.5:
+    resolution: {integrity: sha512-+an0OtSZQgvL5cE66A6WOaOHjjv8nGEJJfajnbzgKmo77UFOnspsViOdqp/ySu2Q3cjXk2BK4H7y0p2rmc0rVw==}
+    dev: false
 
   /tailwindcss/2.2.19_0c54bdadaf9d9c9c6c134cb2c6c061a3:
     resolution: {integrity: sha512-6Ui7JSVtXadtTUo2NtkBBacobzWiQYVjYW0ZnKaP9S1ZCKQ0w7KVNz+YSDI/j7O7KCMHbOkz94ZMQhbT9pOqjw==}
