@@ -1,6 +1,7 @@
 <script>
 	import DashboardCard from './DashboardCard.svelte';
 	import FeedbackCard from './FeedbackCard.svelte';
+	import LastGradesCard from './LastGradesCard.svelte';
 	import TimetableCard from './TimetableCard.svelte';
 </script>
 
@@ -13,5 +14,9 @@
 
 	<DashboardCard>
 		<TimetableCard />
+	</DashboardCard>
+
+	<DashboardCard>
+		<LastGradesCard />
 	</DashboardCard>
 </div>

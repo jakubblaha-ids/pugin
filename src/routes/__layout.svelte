@@ -40,7 +40,7 @@
 	>
 		<TopBanner />
 
-		<div class="flex-grow overflow-y-scroll scrollbar-hide">
+		<div class="flex-grow overflow-y-scroll scrollbar-hide pb-20">
 			<slot />
 		</div>
 
