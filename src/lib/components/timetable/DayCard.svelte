@@ -1,8 +1,5 @@
 <script lang="ts">
-    import Avatar from "../Avatar.svelte";
-
     export let predmety: any[];
-    $: console.log(predmety);
 </script>
 
 <div class="bg-white rounded-xl px-2 py-3 flex flex-col gap-2">
