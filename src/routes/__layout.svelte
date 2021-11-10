@@ -36,7 +36,7 @@
 
 <div class="grid place-items-center h-screen">
 	<div
-		class="h-[800px] w-[400px]  rounded-2xl ring-2 ring-gray-100 flex flex-col bg-[#1E1E1E] overflow-hidden"
+		class="h-[800px] w-[400px]  rounded-2xl ring-2 ring-gray-100 flex flex-col bg-[#1E1E1E] overflow-hidden relative"
 	>
 		<TopBanner />
 
@@ -46,7 +46,7 @@
 
 		<!-- Navigation -->
 		<div
-			class="h-96 rounded-2xl bg-[#ECECEC] flex-shrink-0 shadow flex flex-col transition-transform duration-300"
+			class="h-96 rounded-2xl bg-[#ECECEC] flex-shrink-0 shadow flex flex-col transition-transform duration-300 absolute bottom-0 w-full"
 			style="transform: translateY({navTranslateY});"
 		>
 			<div class="h-20 flex justify-around items-center flex-shrink-0">
