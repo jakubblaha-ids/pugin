@@ -11,7 +11,7 @@
 <div class="text-white text-center text-lg">6.F</div>
 
 <div class="px-4 mt-4 space-y-3 mb-4">
-	<ProfileItem text="99+ new notifications" showDot={true} />
+	<ProfileItem text="<span class='text-[#5783D9]'>99+</span> new notifications" showDot={true} />
 	<ProfileItem text="My absence" showDot={false} />
 	<ProfileItem text="My grades" showDot={true} />
 	<ProfileItem text="Log out" showDot={false}>

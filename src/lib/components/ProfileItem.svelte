@@ -5,7 +5,7 @@
 
 <div class="rounded-2xl bg-[#ECECEC] font-mono px-6 py-6 font-semibold relative flex">
 	<div class="flex-grow">
-		{text}
+		{@html text}
 	</div>
 
 	{#if showDot}
