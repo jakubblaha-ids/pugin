@@ -38,14 +38,18 @@
     const toggleNav = () => (navCollapsed = !navCollapsed);
 
     let innerHeight;
+    let innerWidth;
+    $: usingMoubajl = 1.5 * innerWidth < innerHeight;
 </script>
 
-<svelte:window bind:innerHeight />
+<svelte:window bind:innerHeight bind:innerWidth />
 
 <div class="grid place-items-center h-full">
     <div
-        class="h-[800px] w-[400px]  rounded-2xl ring-2 ring-gray-100 flex flex-col bg-[#1E1E1E] overflow-hidden relative"
-        style="transform: scale({innerHeight < 800
+        class="{usingMoubajl
+            ? 'w-full h-full'
+            : 'h-[800px] w-[400px] rounded-2xl'} ring-2 ring-gray-100 flex flex-col bg-[#1E1E1E] overflow-hidden relative"
+        style="transform: scale({innerHeight < 800 && !usingMoubajl
             ? `${innerHeight / 800}`
             : '1'}); transform-origin: top center;"
     >
