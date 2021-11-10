@@ -52,6 +52,8 @@
 			? `${innerHeight / 800}`
 			: '1'}); transform-origin: top center;"
 	>
+		<slot />
+
 		<!-- Navigation -->
 		<div
 			class="h-96 rounded-2xl bg-[#ECECEC] flex-shrink-0 shadow flex flex-col transition-transform duration-300 absolute bottom-0 w-full"
