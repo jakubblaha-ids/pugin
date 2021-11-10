@@ -8,23 +8,27 @@
 		{
 			title: 'Timetable',
 			href: '/timetable',
-			icon: ''
+			icon: '/icons/calendar.svg'
 		},
 		{
 			title: 'Courses',
-			href: '/courses'
+			href: '/courses',
+			icon: '/icons/academic-cap.svg'
 		},
 		{
 			title: 'Lunch',
-			href: '/lunch'
+			href: '/lunch',
+			icon: '/icons/cake.svg'
 		},
 		{
 			title: 'Find person',
-			href: '/find-person'
+			href: '/find-person',
+			icon: '/icons/search.svg'
 		},
 		{
 			title: 'Settings',
-			href: '/settings'
+			href: '/settings',
+			icon: '/icons/cog.svg'
 		}
 	];
 
@@ -83,7 +87,7 @@
 
 			<div class="overflow-y-scroll scrollbar-hide px-6 space-y-3 pb-6">
 				{#each navItems as item}
-					<NavItem text={item.title} href={item.href} />
+					<NavItem text={item.title} href={item.href} icon={item.icon} />
 				{/each}
 			</div>
 		</div>
