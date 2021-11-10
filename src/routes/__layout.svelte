@@ -6,7 +6,7 @@
 	const navItems = [
 		{
 			title: 'Timetable',
-			href: '/coming-soon',
+			href: '/timetable',
 			icon: '/icons/calendar.svg'
 		},
 		{
