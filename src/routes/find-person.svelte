@@ -54,4 +54,8 @@
 			<FindPersonItem icon={person.icon} name={person.name} title={person.title} />
 		{/each}
 	</div>
+
+	{#if !filterString}
+		<div class="font-mono text-white text-center mt-4">A 420 dalších...</div>
+	{/if}
 </div>
