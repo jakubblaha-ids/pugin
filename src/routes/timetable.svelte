@@ -3,12 +3,12 @@
 
     import { rozvrh } from "$lib/ts/timetable";
 
-    const dny = ["pondělí", "úterý", "středa", "čtvrtek", "pátek", "sobota", "neděle"];
+    const dny = ["pondělí", "úterý", "středa", "čtvrtek", "pátek"];
 </script>
 
 <div class="flex flex-col w-full gap-4 px-4 font-mono py-4">
     {#each rozvrh as day, i}
-        <div class="capitalize text-white font-3xl">{dny[i]}</div>
+        <div class="capitalize text-white font-3xl">{dny[i % 5]}</div>
         <DayCard predmety={day} />
     {/each}
 </div>
