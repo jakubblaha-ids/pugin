@@ -1,7 +1,6 @@
 <script>
 	import Avatar from '$lib/components/Avatar.svelte';
 	import NavItem from '$lib/components/NavItem.svelte';
-	import TopBanner from '$lib/components/TopBanner.svelte';
 	import '../app.css';
 
 	const navItems = [
@@ -49,8 +48,6 @@
 			? `${innerHeight / 800}`
 			: '1'}); transform-origin: top center;"
 	>
-		<TopBanner />
-
 		<div class="flex-grow overflow-y-scroll scrollbar-hide pb-20">
 			<slot />
 		</div>

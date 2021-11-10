@@ -1,7 +1,9 @@
 <script>
 	import Dashboard from '$lib/components/Dashboard.svelte';
-	import DashboardCard from '$lib/components/DashboardCard.svelte';
+	import TopBanner from '$lib/components/TopBanner.svelte';
 </script>
+
+<TopBanner />
 
 <div class="px-4 py-4">
 	<Dashboard />
